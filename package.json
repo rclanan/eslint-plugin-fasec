@@ -1,0 +1,43 @@
+{
+  "name": "eslint-plugin-fasec",
+  "version": "0.1.2",
+  "description": "Fusion Alliance Security Scanner - ESLint Rules",
+  "homepage": "",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "lint",
+    "security"
+  ],
+  "author": "Fusion Alliance",
+  "contributors": [
+    "Ray Clanan <rclanan@utopianconcept.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "mail": "",
+    "url": ""
+  },
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "eslint-tester": "^0.6.0",
+    "js-yaml": "^3.2.7",
+    "mocha": "^2.2.1"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "dependencies": {
+    "safe-regex": "^1.1.0"
+  }
+}

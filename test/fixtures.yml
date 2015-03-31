@@ -30,3 +30,19 @@ csrfBeforeMethodOverride:
         app.use(csrf());
       errors:
         - message: 'Bypass Connect CSRF protection by abusing methodOverride Middleware - http://blog.nodesecurity.io/2013/09/07/bypass-connect-csrf-protection-by-abusing'
+
+timeingAttacks:
+  valid:
+    - |
+      if(encodedHash === '0820b32b206b7352858e8903a838ed14319acdfd') {
+        console.log('valid');
+      }
+
+  invalid:
+    -
+      code: |
+        if(password === 'testing') {
+          console.log('invalid');
+        }
+      errors:
+        - message: 'Potential timing attack'

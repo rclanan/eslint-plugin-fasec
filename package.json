@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:fusionalliance/eslint-plugin-fasec.git"
   },
   "bugs": {
     "mail": "code@fusionalliance.com",

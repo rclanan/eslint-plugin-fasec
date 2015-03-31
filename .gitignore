@@ -7,5 +7,7 @@
 *.sublime-project
 *.sublime-workspace
 
+npm-debug.log
+
 /public/assets/
 /.cache/

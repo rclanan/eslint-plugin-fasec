@@ -13,3 +13,4 @@ var fixtures = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'fixtures.yml'
 
 eslintTester.addRuleTest('lib/no-unsafe-regex', fixtures.unsafeRegex);
 eslintTester.addRuleTest('lib/no-csrf-before-method-override', fixtures.csrfBeforeMethodOverride);
+eslintTester.addRuleTest('lib/no-timing-attacks', fixtures.timeingAttacks);

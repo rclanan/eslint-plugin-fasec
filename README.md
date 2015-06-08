@@ -14,7 +14,7 @@ Either run in bash `$ npm test` or the full command `$ node node_modules/.bin/es
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Fusion Alliance
+Copyright (c) 2015 [Fusion Alliance](https://www.fusionalliance.com/?utm_source=GitHub&utm_medium=Website&utm_campaign=OpenSource)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

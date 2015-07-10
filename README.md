@@ -1,14 +1,69 @@
-FASS
+FASEC
 ======
 
-## TEST
+## Getting Started
+
+This plugin requires Grunt ~0.4.5
+
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started guide](http://gruntjs.com/getting-started), as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+
+```
+npm install grunt-fasec --save-dev
+```
+
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+
+```
+grunt.loadNpmTasks('grunt-fasec');
+```
+
+## The "fasec" task
+
+### Overview
+
+In your project's Gruntfile, add a section named fasec to the data object passed into `grunt.initConfig()`.
+
+```javascript
+grunt.initConfig({
+  fasec: {
+    default: {
+      options: {
+        // Task-specific options go here. 
+      },
+      files: {
+        // Target-specific file lists and/or options go here. 
+      }
+    },
+  }
+});
+```
+
+### Demo
+
+To see fasec in action, clone and run the [fasec demo project](https://github.com/fusionalliance/fasec-demo).
+
+## Test
 
 Testing is provided by mocha.
 
-Either run in bash `$ npm test` or the full command `$ node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha --reporter spec`.
+Either run in bash:
 
-## Contributing
+```
+$ npm test
+```
 
+Or the full command:
+
+```
+$ node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha --reporter spec
+```
+
+## Contributors
+
+[![Fusion Alliance Logo](https://avatars0.githubusercontent.com/u/1154219?v=3&u=e1451e6a65343331369d53a2b6e0c7046c2cc810&s=60)](https://github.com/FusionAlliance)
+**fasec** is a product of Fusion Alliance &copy; 2015.
+
++ [Ray Clannan](https://github.com/rclanan) (Author)
 
 ## LICENSE
 

@@ -1,46 +1,28 @@
-FASEC
-======
+# Fusion Alliance Security for Node.js - ESLint Plugins
+
+The plugin architecture of [ESLint](http://eslint.org/) makes it possible to
+create plugins that look for potential security issues in JavaScript code. Adam
+Baldwin discusses some of these techniques in his article [Using ESLint Plugins
+for Node.js App Security](https://www.safaribooksonline.com/blog/2014/03/28/using-eslint-plugins-node-js-app-security/).
+This project is a collection of security-minded ESLint custom rules.
+
 
 ## Getting Started
 
-This plugin requires Grunt ~0.4.5
+You can use these rules in ESLint manually:
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started guide](http://gruntjs.com/getting-started), as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
-
-```
-npm install grunt-fasec --save-dev
+```shell
+eslint --reset -c config.json --rulesdir ./lib [file.js] [dir]
 ```
 
-Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+But in practice it's much more convenient to use them in a task runner plugin,
+such as the [FASEC Grunt plugin](https://github.com/fusionalliance/grunt-fasec). 
 
-```
-grunt.loadNpmTasks('grunt-fasec');
-```
 
-## The "fasec" task
+## Demo
 
-### Overview
+To see FASEC in action, clone and run the [FASEC demo project](https://github.com/fusionalliance/fasec-demo).
 
-In your project's Gruntfile, add a section named fasec to the data object passed into `grunt.initConfig()`.
-
-```javascript
-grunt.initConfig({
-  fasec: {
-    default: {
-      options: {
-        // Task-specific options go here. 
-      },
-      files: {
-        // Target-specific file lists and/or options go here. 
-      }
-    },
-  }
-});
-```
-
-### Demo
-
-To see fasec in action, clone and run the [fasec demo project](https://github.com/fusionalliance/fasec-demo).
 
 ## Test
 
@@ -48,26 +30,28 @@ Testing is provided by mocha.
 
 Either run in bash:
 
-```
+```shell
 $ npm test
 ```
 
 Or the full command:
 
-```
+```shell
 $ node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha --reporter spec
 ```
+
 
 ## Contributors
 
 [![Fusion Alliance Logo](https://avatars0.githubusercontent.com/u/1154219?v=3&u=e1451e6a65343331369d53a2b6e0c7046c2cc810&s=60)](https://github.com/FusionAlliance)
-**fasec** is a product of Fusion Alliance &copy; 2015.
+**FASEC** is a product of Fusion Alliance &copy; 2015.
 
 + [Ray Clannan](https://github.com/rclanan) (Author)
 
 This project uses the following Open Source components:
 
 + [evilpacket/eslint-rules](https://github.com/evilpacket/eslint-rules/), Copyright (c) 2013 Adam Baldwin, [MIT License](https://github.com/evilpacket/eslint-rules/blob/master/LICENSE).
+
 
 ## LICENSE
 

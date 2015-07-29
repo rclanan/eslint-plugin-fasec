@@ -65,11 +65,16 @@ $ node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha --r
 
 + [Ray Clannan](https://github.com/rclanan) (Author)
 
+This project uses the following Open Source components:
+
++ [evilpacket/eslint-rules](https://github.com/evilpacket/eslint-rules/), Copyright (c) 2013 Adam Baldwin, [MIT License](https://github.com/evilpacket/eslint-rules/blob/master/LICENSE).
+
 ## LICENSE
 
 The MIT License (MIT)
 
 Copyright (c) 2015 [Fusion Alliance](https://www.fusionalliance.com/?utm_source=GitHub&utm_medium=Website&utm_campaign=OpenSource)
+With portions Copyright (c) 2013 [Adam Baldwin](https://github.com/evilpacket/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

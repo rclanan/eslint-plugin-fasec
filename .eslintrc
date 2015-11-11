@@ -21,7 +21,7 @@ rules:
   max-len:              [ 2, 120, 1000 ]
   no-alert:             2
   no-bitwise:           2
-  no-comma-dangle:      2
+  comma-dangle:         [ 2, 'never' ]
   no-console:           2
   no-div-regex:         2
   no-else-return:       2
@@ -35,8 +35,7 @@ rules:
   quotes:               [ 2, single, avoid-escape ]
   radix:                2
   space-after-keywords: [ 2, always ]
-  space-in-brackets:    [ 1, always, { propertyName: false } ]
-
+  
   #
   # Our custom rules
   #

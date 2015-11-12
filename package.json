@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fasec",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Fusion Alliance Security Scanner - ESLint Rules",
   "homepage": "https://github.com/fusionalliance/eslint-plugin-fasec",
   "keywords": [
@@ -22,17 +22,24 @@
     "url": "https://github.com/fusionalliance/eslint-plugin-fasec/issues"
   },
   "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "coveralls": "^2.11.4",
     "eslint": "^1.9.0",
-    "eslint-tester": "^0.8.2",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.1",
-    "js-yaml": "^3.2.7",
-    "jshint-stylish": "^2.0.1",
-    "mocha": "^2.2.1"
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
   },
-  "main": "./index.js",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib"
+  ],
   "scripts": {
-    "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
+    "coveralls": "cat ./reports/coverage/lcov.info | coveralls",
+    "lint": "eslint ./",
+    "test": "npm run lint && npm run unit-test",
+    "unit-test": "istanbul cover --dir reports/coverage node_modules/mocha/bin/_mocha tests/**/*.js -- --reporter dot"
   },
   "licenses": [
     {

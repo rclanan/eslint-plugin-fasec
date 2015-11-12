@@ -2,9 +2,7 @@ language: node_js
 
 node_js:
   - 0.10
-
-before_install:
-  - npm install -g grunt-cli
-
-script:
-  - grunt ci --verbose --stack
+  - 0.12
+  - 4
+after_success:
+  - npm run coveralls

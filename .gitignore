@@ -1,13 +1,17 @@
-/node_modules/
-/doc/
-/tmp/
+lib-cov
+node_modules
+doc
+tmp
 *.log
 *.log.*
 *.swp
 *.sublime-project
 *.sublime-workspace
+.idea/
 
 npm-debug.log
-
-/public/assets/
-/.cache/
+logs
+reports
+build
+public/assets/
+.cache
